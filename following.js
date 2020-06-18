@@ -7,7 +7,7 @@ const followingPage =
 const { EMAIL, PASSWORD } = process.env;
 
 if (!EMAIL || !PASSWORD) {
-  console.log(
+  console.error(
     "Please, pass the strava credentials by setting the EMAIL and PASSWORD env vars."
   );
   process.exit(0);
@@ -37,7 +37,7 @@ if (!EMAIL || !PASSWORD) {
     const athleteLinksOnPage = await page.$$eval("a.avatar-content", (nodes) =>
       nodes.map((n) => n.href)
     );
-    console.log(
+    console.error(
       `Page #${pageNum}, # of athletes: ${athleteLinksOnPage.length}`
     );
     athletesLinks = [...athletesLinks, ...athleteLinksOnPage];
@@ -49,7 +49,7 @@ if (!EMAIL || !PASSWORD) {
     pageNum += 1;
   }
 
-  const onlyPeople = athletesLinks.filter((l) => l.match(/\/\d+$/));
-  console.log(onlyPeople);
+  const onlyPeople = athletesLinks.filter((l) => l.match(/\/athletes\/\d+$/));
+  console.log(JSON.stringify(onlyPeople));
   browser.close();
 })();
