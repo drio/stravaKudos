@@ -30,6 +30,9 @@ at boot time:
 $ make service/start_at_boot
 ```
 
+Notice the service will run every 15 minutes. If you want to change that, update line number 4 in the
+`stravaKudos.sh.template`.
+
 When running as a service, you can check the output with:
 
 ```
