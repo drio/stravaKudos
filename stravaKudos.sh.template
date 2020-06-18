@@ -1,0 +1,11 @@
+#!/bin/bash
+#vim: ft=bash:
+
+WAIT=900 # 15 min
+
+cd ~/travaKudos
+while true
+do
+  EMAIL="__EMAIL__" PASSWORD="__PASSWORD__" make
+  sleep $WAIT 
+done
