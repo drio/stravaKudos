@@ -30,7 +30,8 @@ async function giveThumbUps(listOfAthletePages) {
       process.stdout.write("👍 ");
       await tu.click();
     }
-    process.stdout.write("\n");
+    const msg = thumbsUp.length > 0 ? "\n" : " no new activities ";
+    process.stdout.write(`${msg} \n`);
   }
   browser.close();
 }
