@@ -1,0 +1,23 @@
+{
+  "name": "stravakudos",
+  "version": "0.0.1",
+  "description": "Give strava kudos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "strava"
+  ],
+  "author": "David Rio Deiros",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "puppeteer": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
