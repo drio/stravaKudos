@@ -21,7 +21,7 @@ ifndef PASSWORD
 $(error PASSWORD env var not provided)
 endif
 
-all: /usr/bin/node node_modules pages.json
+all: node_modules pages.json
 	cat pages.json | EMAIL=$(EMAIL) PASSWORD=$(PASSWORD) node ./index.js
 
 /usr/bin/node: /usr/bin/curl
