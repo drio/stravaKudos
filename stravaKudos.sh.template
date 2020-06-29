@@ -3,7 +3,7 @@
 
 WAIT=900 # 15 min
 
-cd ~/travaKudos
+cd ~/stravaKudos
 while true
 do
   EMAIL="__EMAIL__" PASSWORD="__PASSWORD__" make
