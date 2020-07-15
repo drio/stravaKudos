@@ -9,6 +9,7 @@ To run the service only once:
 ```
 $ git clone https://github.com/drio/stravaKudos.git
 $ cd stravaKudos
+$ npm i
 $ EMAIL=foo@bar.com PASSWORD=foobar make service/logs
 ```
 
@@ -19,15 +20,15 @@ on ubuntu 20.04):
 
 ```
 $ cd stravaKudos
-$ make service/install
-$ make service/start
+$  EMAIL=foo@bar.com PASSWORD=foobar make service/install
+$  EMAIL=foo@bar.com PASSWORD=foobar make service/start
 ```
 
 Make sure the software runs correctly as a service. Then if you want to start it
 at boot time:
 
 ```
-$ make service/start_at_boot
+$  EMAIL=foo@bar.com PASSWORD=foobar make service/start_at_boot
 ```
 
 Notice the service will run every 15 minutes. If you want to change that, update line number 4 in the
