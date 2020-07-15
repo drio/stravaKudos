@@ -7,7 +7,7 @@ This is a little service that runs periodically to give strava kudos to people y
 To run the service only once:
 
 ```
-$ git clone git@github.com:drio/stravaKudos.git
+$ git clone https://github.com/drio/stravaKudos.git
 $ cd stravaKudos
 $ EMAIL=foo@bar.com PASSWORD=foobar make service/logs
 ```
