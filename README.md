@@ -9,8 +9,12 @@ To run the service only once:
 ```
 $ git clone https://github.com/drio/stravaKudos.git
 $ cd stravaKudos
+# NOTE: Depending on your installation, you will have to install tons of dependency libraries.
+# If you get a refine list for your apt-get command, please share it with me so I can add it to 
+# my makefile and other users will benefit from it.
 $ npm i
-$ EMAIL=foo@bar.com PASSWORD=foobar make service/logs
+$ EMAIL=foo@bar.com PASSWORD=foobar make 
+
 ```
 
 Where EMAIL and PASSWORD contain your strava credentials.
