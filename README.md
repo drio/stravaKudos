@@ -24,8 +24,8 @@ on ubuntu 20.04):
 
 ```
 $ cd stravaKudos
-$  EMAIL=foo@bar.com PASSWORD=foobar make service/install
-$  EMAIL=foo@bar.com PASSWORD=foobar make service/start
+$ EMAIL=foo@bar.com PASSWORD=foobar make service/install
+$ EMAIL=foo@bar.com PASSWORD=foobar make service/start
 ```
 
 Make sure the software runs correctly as a service. Then if you want to start it
