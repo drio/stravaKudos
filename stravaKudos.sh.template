@@ -2,7 +2,7 @@
 #vim: ft=bash:
 
 WAIT=900 # 15 min
-TIMEOUT=240 # 4 min
+TIMEOUT=360 # 5 min
 
 cd ~/stravaKudos
 while true
