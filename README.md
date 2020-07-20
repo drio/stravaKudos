@@ -52,3 +52,6 @@ Jun 18 16:12:44 aoi strava_kudos.sh[2045149]: - https://www.strava.com/athletes/
 Jun 18 16:12:50 aoi strava_kudos.sh[2045149]: - https://www.strava.com/athletes/1125703:👍
 ...
 ```
+
+You can also look into your stravaKudos dir for the `run.log` and `errors.log`. The first one will show you the start and end times of each of the running instances. So you get an idea how long it takes to run. You can also use the `make service/logs` and check the last output line to see how many athletes stravaKudos processed. Chrominium generates a few exceptions when running the thumbsUp code so some athletes won't receive kudos until --hopefully-- the next run. Still trying to figure out what is going on there. PRs with fixes and improvements are welcome.
+
