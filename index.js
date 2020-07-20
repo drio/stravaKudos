@@ -31,7 +31,7 @@ async function giveThumbUps(listOfAthletePages) {
     }
   }
   process.stdout.write(
-    `Results (athletes processed): ${ok} OK, ${failed} failed \n`
+    `Results (athletes processed): Total: ${listOfAthletePages.length},  ${ok} OK, ${failed} failed \n`
   );
   browser.close();
 }
