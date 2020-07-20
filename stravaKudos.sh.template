@@ -5,11 +5,11 @@ WAIT=900 # 15 min
 TIMEOUT=240 # 4 min
 
 cd ~/stravaKudos
-echo "`date`>> Starting stravaKudos" > run.log
+echo "`date`>> Starting stravaKudos" >> run.log
 while true
 do
   rm -f pages.json
   EMAIL="__EMAIL__" PASSWORD="__PASSWORD__" timeout $TIMEOUT make 2> errors.log
   sleep $WAIT 
 done
-echo "`date`>> Done with stravaKudos" > run.log
+echo "`date`>> Done with stravaKudos" >> run.log
