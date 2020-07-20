@@ -2,10 +2,12 @@
 #vim: ft=bash:
 
 WAIT=900 # 15 min
+TIMEOUT=240 # 4 min
 
 cd ~/stravaKudos
 while true
 do
-  EMAIL="__EMAIL__" PASSWORD="__PASSWORD__" make
+  rm -f pages.json
+  EMAIL="__EMAIL__" PASSWORD="__PASSWORD__" timeout $TIMEOUT make 2> errors.log
   sleep $WAIT 
 done
