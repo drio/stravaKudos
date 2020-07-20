@@ -3,6 +3,8 @@ const common = require("./common");
 
 async function giveThumbUps(listOfAthletePages) {
   const { page, browser } = await common.getPage();
+  let ok = 0;
+  let failed = 0;
 
   /* Go over all the activity pages and give thumbs up */
   for (const activityPage of listOfAthletePages) {
@@ -20,12 +22,17 @@ async function giveThumbUps(listOfAthletePages) {
       }
       const msg = thumbsUp.length > 0 ? "" : " no new activities ";
       process.stdout.write(`${msg} \n`);
+      ok++;
     } catch (error) {
       process.stderr.write("Error when trying to give thumbs up. Skipping.");
       process.stderr.write(error);
+      failed++;
       continue;
     }
   }
+  process.stdout.write(
+    `Results (athletes processed): ${ok} OK, ${failed} failed \n`
+  );
   browser.close();
 }
 
