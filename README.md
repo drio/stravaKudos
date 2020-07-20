@@ -24,7 +24,7 @@ on ubuntu 20.04):
 
 ```
 $ cd stravaKudos
-$ EMAIL=foo@bar.com PASSWORD=foobar make service/install
+$ rm -f ./strava_kudos.sh; EMAIL=foo@bar.com PASSWORD=foobar make service/install
 $ EMAIL=foo@bar.com PASSWORD=foobar make service/start
 ```
 
